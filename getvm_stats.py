@@ -21,7 +21,7 @@ from requests.packages.urllib3.exceptions import InsecureRequestWarning
 def PrintUsage():
 
     print ("<Usage>: <{}> <VM Name>".format(sys.argv[0]))
-    print ("Will output CPU/Memory usage over the last %d minutes, sampled over an interval of %d seconds." % (C.period/60, C.interval))
+    print ("Will output CPU/Memory usage over the last %d minutes, sampled over an interval of 30 seconds." % (C.period/60))
     return
 
 if __name__ == "__main__":
