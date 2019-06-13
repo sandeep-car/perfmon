@@ -10,4 +10,4 @@ HOWTO.txt describes how to set up a dev environment so one can get started.
 
 clusterconfig.py contains variables and common functions used in the code. It is a Python module. You will need to update the variables above the line in order to get the programs to work. In particular please create a separate admin user on your cluster called "restapiuser", so the real admin password is not passed around.
 
-getvm_stats.py takes the name of a VM and spews out CPU and Memory usage percentages over a particular period of time. The period and the sampling interval are in clusterconfig.py.
+getvm_stats.py takes the name of a VM and spews out CPU and Memory usage percentages over a particular period of time. The period is a variable in clusterconfig.py, default is 3600 seconds.
