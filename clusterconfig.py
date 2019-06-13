@@ -5,9 +5,8 @@ import time
 import requests
 from urllib.parse import quote
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
-# Time period is one hour (3600 seconds), interval is 30 seconds.
-interval=10
-period=1800
+# Time period is one hour (3600 seconds).
+period=3600
 
 # AHV cluster details. We need these in order to log into the REST API.
 src_cluster_ip = "555.666.777.888"
@@ -79,7 +78,7 @@ class my_api():
         # https://10.133.16.50:9440/api/nutanix/v1/vms/3aa1699a-ec41-4037-aade-c73a9d14ed8c/stats/?metrics=hypervisor_cpu_usage_ppm&startTimeInUsecs=1524009660000000&endTimeInUsecs=1524096060000000&interval=30
 
         cluster_url = self.base_urlv1 + "vms/" + vm_uuid + "/stats/?metrics=" + metric + "&startTimeInUsecs="
-        cluster_url += str(start_time) + "&" + "endTimeInUsecs=" + str(cur_time) + "&interval=" + str(interval)
+        cluster_url += str(start_time) + "&" + "endTimeInUsecs=" + str(cur_time) + "&interval=30"
         print ("Cluster_URL: ", cluster_url)
         server_response = self.sessionv1.get(cluster_url)
         # print("Response code: %s" % server_response.status_code)
