@@ -17,4 +17,4 @@ CAVEATS:
 2. If you have more than one VM with the same name, we'll pick the VM randomly :-) If this is a problem, you can either change the VM name via Prism, or modify getvm_stats.py so it takes a VM_UUID from the CLI.
 
 FUTURE DEVELOPMENT/IDEAS:
-1. Modify code to take certain actions when CPU and/or memory usage goes over a certain limit. IE Clone a VM and add its IP to a load balancer. Or send an alert to someone.
+1. Modify code to take certain actions when CPU and/or memory usage goes over a certain limit. E.G. Clone a VM and add its IP to a load balancer. Or send an alert to someone.
