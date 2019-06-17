@@ -79,7 +79,7 @@ class my_api():
 
         cluster_url = self.base_urlv1 + "vms/" + vm_uuid + "/stats/?metrics=" + metric + "&startTimeInUsecs="
         cluster_url += str(start_time) + "&" + "endTimeInUsecs=" + str(cur_time) + "&interval=30"
-        print ("Cluster_URL: ", cluster_url)
+        # print ("Cluster_URL: ", cluster_url)
         server_response = self.sessionv1.get(cluster_url)
         # print("Response code: %s" % server_response.status_code)
         return server_response.status_code ,json.loads(server_response.text)
