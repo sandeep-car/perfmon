@@ -18,3 +18,4 @@ CAVEATS:
 
 FUTURE DEVELOPMENT/IDEAS:
 1. Modify code to take certain actions when CPU and/or memory usage goes over a certain limit. E.G. Clone a VM and add its IP to a load balancer. Or send an alert to someone.
+2. Instead of a single VM, read a CSV file and output utilization metrics for all VMs in that CSV file.
