@@ -73,8 +73,8 @@ if __name__ == "__main__":
             if (cpu > cpu_max):
                 cpu_max = int(cpu)
             running_total += int(cpu)
-            # print ("CPU: %d cpu_max: %d cpu_min: %d running_total: %d Index: %d" % (cpu,cpu_max,cpu_min,running_total,i))
             i=i+1
+            # print ("CPU: %d cpu_max: %d cpu_min: %d running_total: %d Index: %d" % (cpu,cpu_max,cpu_min,running_total,i))
 
         print ("Percentage utilization: CPU_MAX: %5.2f CPU_MIN: %5.2f CPU_AVG %5.2f" % (cpu_max/10000,cpu_min/10000,(running_total/10000)/i))
 
@@ -95,8 +95,8 @@ if __name__ == "__main__":
             if (mem > mem_max):
                 mem_max = int(mem)
             running_total += int(mem)
-            # print ("MEM: %d mem_max: %d mem_min: %d running_total: %d Index: %d" % (mem,mem_max,mem_min,running_total,i))
             i=i+1
+            # print ("MEM: %d mem_max: %d mem_min: %d running_total: %d Index: %d" % (mem,mem_max,mem_min,running_total,i))
 
         print ("Percentage utilization: MEM_MAX: %5.2f MEM_MIN: %5.2f MEM_AVG %5.2f" % (mem_max/10000,mem_min/10000,(running_total/10000)/i))
         sys.exit(0)
