@@ -1,7 +1,7 @@
 #!/usr/local/bin/python3.7
 #
 # DISCLAIMER: This script is not supported by Nutanix. Please contact
-# Sandeep Cariapa (firstname.lastname@nutanix.com) if you have any questions.
+# Sandeep Cariapa (lastname@gmail.com) if you have any questions.
 # Last updated: 6/13/2019
 # This script uses Python 3.7.
 # NOTE:
